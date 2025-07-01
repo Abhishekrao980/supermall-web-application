@@ -69,9 +69,7 @@ const Navbar = () => {
                   )}
                 </Link>
 
-                <Link to={"/profile"} className="btn btn-info mx-3">
-                  profile
-                </Link>
+               
                 <button
                   className="btn btn-danger mx-3"
                   onClick={() => {
