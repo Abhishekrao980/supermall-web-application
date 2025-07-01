@@ -30,7 +30,7 @@ const AppState = (props) => {
       console.log(api.data.products);
       setProducts(api.data.products);
       setFilteredData(api.data.products);
-      userProfile();
+      
     };
     fetchProduct();
     userCart();
@@ -128,19 +128,7 @@ const AppState = (props) => {
     });
   };
 
-  // user profile
-  const userProfile = async () => {
-    const api = await axios.get(`${url}/user/profile`, {
-      headers: {
-        "Content-Type": "Application/json",
-        Auth: token,
-      },
-      withCredentials: true,
-    });
-    // console.log("user profile ",api.data);
-    setUser(api.data.user);
-  };
-
+  
   // add To Cart
   const addToCart = async (productId, title, price, qty, imgSrc) => {
     console.log("product id = ", productId);
