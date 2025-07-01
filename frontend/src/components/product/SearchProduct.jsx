@@ -55,7 +55,7 @@ const SearchProduct = () => {
                       <button className="btn btn-primary mx-3">
                         {product.price} {"₹"}
                       </button>
-                      <button className="btn btn-warning">Add To Cart</button>
+                      <button onClick={() => addToCart(product._id, product.title, product.price, 1, product.imgSrc)} className="btn btn-warning">Add To Cart</button>
                     </div>
                   </div>
                 </div>

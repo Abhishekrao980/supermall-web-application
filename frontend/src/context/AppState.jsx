@@ -11,7 +11,7 @@ const AppState = (props) => {
 
 
   const [products, setProducts] = useState([]);
-  const [token, setToken] = useState([]);
+  const [token, setToken] = useState();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [filteredData, setFilteredData] = useState([]);
   const [user, setUser] = useState();

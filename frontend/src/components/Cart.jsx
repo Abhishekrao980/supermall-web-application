@@ -26,7 +26,7 @@ const Cart = () => {
   // console.log("my cart", cart);
   return (
     <>
-      {cart?.items?.length == 0 ? (
+     {!cart?.items || cart.items.length === 0 ? (
         <>
         <div className="text-center my-5">
 
