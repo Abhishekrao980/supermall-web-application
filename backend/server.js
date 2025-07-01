@@ -6,9 +6,10 @@ import productRouter from "./Routes/product.js";
 import cartRouter from "./Routes/cart.js";
 import addressRouter from "./Routes/address.js";
 import cors from "cors";
+import dotenv from "dotenv";
 
-require("dotenv").config();
 
+dotenv.config();
 
 const app = express();
 
