@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { Link ,useParams} from "react-router-dom";
 
 const SearchProduct = () => {
-  const { products } = useContext(AppContext);
+  const { products, addToCart } = useContext(AppContext);
   const [searchProduct, setSearchProduct] = useState([]);
 
   const {term} = useParams()

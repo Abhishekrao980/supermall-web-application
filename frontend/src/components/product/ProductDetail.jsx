@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import RelatedProduct from "./RelatedProduct";
+import AppContext from "../context/AppContext";
 
 const ProductDetail = () => {
   const [product, setProduct] = useState();
